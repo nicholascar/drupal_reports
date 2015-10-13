@@ -1,0 +1,302 @@
+/*
+=============================================================================
+CSIRO Visual Identity
+=============================================================================
+    
+From the intranet website at http://my.csiro.au/Support-Services/Creative-Services/CSIRO-Branding/Visual-Identity-templates.aspx
+The following colours are permitted to be used for CSIRO publications:
+
+Core Colours:
+    Midday Blue = #00A9CE (RGB: 0 169 206)
+    Midnight Blue = #00313C (RGB: 0 49 60)
+    
+Primary Palette:
+    Lavender = #9FAEE5 (RGB: 159 174 229)
+    Blueberry = #1E22AA (RGB: 30 34 170)
+
+    Sky Blue = #41B6E6 (RGB: 65 182 230)
+    Ocean Blue = #004B87 (RGB: 0 75 135)
+
+    Light Teal = #2DCCD3 (RGB: 45 204 211)
+    Dark Teal = #007377 (RGB: 0 115 119)
+
+    Light Mint = #71CC98 (RGB: 113 204 152)
+    Dark Mint = #007053 (RGB: 0 112 83)
+
+    Light Forest = #78BE20 (RGB: 120 190 32)
+    Dark Forest = #4A7729 (RGB: 74 119 41)
+
+Secondary Palette (Charts only): 
+    Plum = #6D2077 (RGB: 109 32 119)
+    Fuchsia = #DF1995 (RGB: 223 25 149)
+    Vermillion = #E4002B (RGB: 228 0 43)
+    Orange = #E87722 (RGB: 232 119 34)
+    Gold = #FFB81C (RGB: 255 184 28)
+
+The Visual Identity templates offer several named combinations of colours, like so:
+
+CSIRO Blueberry:
+    Dark text/background:       black
+    Light text / background:    white
+    Accents:                    lavender, blueberry, midday blue, midnight blue, light forest, dark forest, 
+    Hyperlink:                  sky blue
+    Followed Hyperlink:         ocean blue
+
+CSIRO Forest:
+    Dark text/background:       black
+    Light text / background:    white
+    Accents:                    light forest, dark forest, midday blue, midnight blue, lavender, blueberry 
+    Hyperlink:                  sky blue
+    Followed Hyperlink:         ocean blue
+
+CSIRO Midday:
+    Dark text/background:       black
+    Light text / background:    white
+    Accents:                    midday blue, midnight blue, light forest, dark forest, lavender, blueberry
+    Hyperlink:                  sky blue
+    Followed Hyperlink:         ocean blue
+
+CSIRO Mint:
+    Dark text/background:       black
+    Light text / background:    white
+    Accents:                    light mint, dark mint, midday blue, midnight blue, light forest, dark forest
+    Hyperlink:                  lavender
+    Followed Hyperlink:         blueberry
+
+CSIRO Sky:
+    Dark text/background:       black
+    Light text / background:    white
+    Accents:                    sky blue, ocean blue, light forest, dark forest, midday blue, midnight blue
+    Hyperlink:                  lavender
+    Followed Hyperlink:         blueberry
+
+CSIRO Teal:
+    Dark text/background:       black
+    Light text / background:    white
+    Accents:                    light teal, dark teal, midday blue, midnight blue, light forest, dark forest
+    Hyperlink:                  lavender
+    Followed Hyperlink:         blueberry
+
+=============================================================================
+*/
+
+/* Text Colours */
+html 
+{
+    color: #000000; /* Black */
+}
+
+fieldset legend
+{
+    color: #00313C;    /* Midnight Blue */
+}
+
+a:link,
+a:visited 
+{
+	color:#004B87;  /* Ocean Blue */
+}
+
+a:hover,
+a:focus,
+a:active,
+li a.active 
+{
+	color:#41B6E6;  /* Sky Blue */
+}
+
+h1,h3,h5
+{
+	color: #00A9CE;    /* Midday Blue */
+}
+
+h2,h4,h6
+{
+	color: #00313C;    /* Midnight Blue */
+}
+
+/* Backgrounds */
+body
+{
+    background-color: #EEEEEE;    /* Pale Grey */
+}
+
+#page 
+{
+    background-color: #FFFFFF;    /* White */
+}
+
+#header
+{
+    background: url('../images/dark-blue-banner.png') no-repeat scroll 57% 0 #FFFFFF;
+    padding: 0;
+}
+
+#header #logo
+{
+    float: left;
+    padding: 25px 0px 10px 10px;
+    width: 20%;
+}
+
+#header #name-and-slogan
+{
+    float: none;
+    height: 56px;
+}
+
+#header #site-name
+{
+    float: left;
+    line-height: 56px;
+}
+
+#header #site-slogan
+{
+    color: #EEEEEE;    /* Pale Grey */
+    float: left;
+    line-height: 56px;
+    padding-left: 3em;
+}
+
+#header .region-header,
+#header .breadcrumb
+{
+    clear: none;
+    float: none;
+    margin: 0px 0px 0px 20%;
+    width: auto;
+}
+
+#header .region-header .block
+{
+    margin: 0;
+}
+
+#header #secondary-menu,
+#header .region-header .block .loggedinblock
+{
+    float: right;
+    margin-top: -56px;
+    line-height: 56px;
+    padding-right: 10px;
+}
+
+#header .region-header #block-user-login
+{
+    float: right;
+    margin-top: -56px;
+    width: 14em;
+}
+
+#header .region-header #block-user-login h2.block-title
+{
+    font-size: 1em;
+    line-height: 56px;
+    text-align: right;
+}
+
+#header .region-header #block-user-login h2.block-title.collapsiblock a
+{
+    background: url("../images/expanded-white.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    margin-right: 10px;
+    padding-right: 10px;
+}
+#header .region-header #block-user-login h2.block-title.collapsiblockCollapsed a
+{
+    background: url("../images/collapsed-white.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+}
+#header .region-header #block-user-login .content #field-item 
+{
+    background-color: #FFFFFF;
+    border: 1px solid #78BE20;    /* Light Forest */
+    float: right;
+    margin: -10px 0 0 0;
+    padding: 0 10px 10px 10px;
+    position: absolute;
+    z-index: 500;
+}
+#header .region-header #block-user-login .content .form-actions
+{
+   text-align: right; 
+}
+
+#header .breadcrumb 
+{
+    padding: 10px 0px;
+}
+
+#header #site-name a:link,
+#header #site-name a:visited,
+#header #secondary-menu,
+#header #secondary-menu a:link,
+#header #secondary-menu a:visited,
+#header .region-header .block .loggedinblock,
+#header .region-header .block .loggedinblock a:link,
+#header .region-header .block .loggedinblock a:visited,
+#header .region-header #block-user-login .block-title,
+#header .region-header #block-user-login .block-title a:link,
+#header .region-header #block-user-login .block-title a:visited,
+#footer a:link,
+#footer a:visited
+{
+    color: #FFFFFF;
+}
+
+#footer
+{
+   	background-color: #00313C;    /* Midnight Blue */
+   	margin-top: 2em; 
+}
+
+#footer ul.menu
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#footer ul.menu li
+{
+    border-left: solid 1px #EEEEEE;
+    border-right: solid 1px #EEEEEE;
+    display: inline;
+    padding: 0px 1em;
+}
+
+#navigation
+{
+    border-top: 1px solid #00A9CE;    /* Midday Blue */
+}
+
+#content, .block-title
+{
+    border-top: 1px solid #78BE20;    /* Light Forest */
+}
+
+#header .block-title,
+#footer .block-title
+{
+    border-top: none;
+}
+
+.node-teaser
+{
+    margin-bottom: 1em;
+}
+
+.node-teaser .field-name-body
+{
+    background-color: #9FAEE5;      /* Lavender */
+    border: 1px solid #1E22AA;      /* Blueberry */
+}
+.node-teaser .field-name-body p
+{
+    margin: 0;
+    padding: 1em;
+}
+.node-teaser ul.links.inline
+{
+    float: right;
+    margin: 0;
+}

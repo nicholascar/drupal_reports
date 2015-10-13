@@ -1,0 +1,98 @@
+.page-id-report table,.page-id-report th,.page-id-report td,
+.node-type-table table, .node-type-table th, .node-type-table td {
+   border: 1px solid black;
+   text-align: center;
+}
+
+.page-id-report .node-cover-page .field-name-body {
+   color: #00a9ce;
+   font-size: 2.5em;
+} 
+
+.page-id-report .node-cover-page .field-name-field-sub-heading {
+   color: #00a9ce;
+   font-size: 2em;
+}
+
+.page-id-report .node-cover-page .field-name-field-date {
+   color: #00a9ce;
+   font-size: 2em;
+   margin-top:2em;
+}
+
+.page-id-report .views-row {
+   margin-bottom:3em;
+   padding-bottom: 2em;
+}
+
+.page-id-report .field-name-field-field-table-caption {
+   color: #00313c;
+
+   font-size: 18px;
+   line-height: 135%;  
+}
+
+.page-id-report h3 {
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.page-id-report .row_0 {
+   color: white;
+   background-color: #004467;
+}
+
+.page-id-report td {
+   padding: 10px;
+   empty-cells: hide;
+}
+
+.page-id-report tbody .odd {
+}
+
+.page-id-report tbody .even {
+}
+
+.page-id-report .field-name-body {
+   font-size: 15px;
+}
+
+.page-id-report .tablefield-wrapper  table {
+   border-color: white;
+}
+
+.page-id-report .field-name-field-image {
+   max-height: 800px;
+   max-width: 600px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.page-id-report .node-figure .field-name-title {
+   text-align: center;
+}
+
+.page-id-report .node-figure .field-name-node-link {
+   
+}
+
+
+
+.page-id-report .node-figure .field-name-field-field-table-caption {
+   font-size: 18px;
+}
+
+.page-id-report .views-row {
+   border-bottom:1px solid #e2e2e2;
+   padding-bottom: 10px;
+}
+
+.page-id-report .field-name-field-table-source {
+   margin-top:2em;
+}
+
+.page-id-report table {
+   
+}
+

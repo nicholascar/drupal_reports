@@ -1,0 +1,115 @@
+.node-type-element-section table, .node-report table,.node-report th,.node-report td,
+.node-type-table table, .node-type-table th, .node-type-table td {
+   border: 1px solid black;
+   text-align: center;
+}
+
+.node-type-element-section .node-cover-page .field-name-body, .node-report .node-cover-page .field-name-body {
+   color: #00a9ce;
+   font-size: 2.5em;
+} 
+
+.node-type-element-section .node-cover-page .field-name-field-sub-heading, .node-report .node-cover-page .field-name-field-sub-heading {
+   color: #00a9ce;
+   font-size: 2em;
+}
+
+.node-type-element-section .node-cover-page .field-name-field-date, .node-report .node-cover-page .field-name-field-date {
+   color: #00a9ce;
+   font-size: 2em;
+   margin-top:2em;
+}
+
+.node-type-element-section .views-row, .node-report .views-row {
+   margin-bottom:3em;
+   padding-bottom: 2em;
+}
+
+.node-type-element-section .field-name-field-field-table-caption, .node-report .field-name-field-field-table-caption {
+   color: #00313c;
+
+   font-size: 18px;
+   line-height: 135%;  
+}
+
+.node-type-element-section h3, .node-report h3 {
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.node-type-element-section .row_0, .node-report .row_0 {
+   color: white;
+   background-color: #004467;
+}
+
+.node-type-element-section td, .node-report td {
+   padding: 10px;
+   empty-cells: hide;
+}
+
+.node-type-element-section , .node-report tbody .odd {
+}
+
+.node-type-element-section, .node-report tbody .even {
+}
+
+.node-type-element-section .field-name-body, .node-report .field-name-body {
+   font-size: 15px;
+}
+
+.node-type-element-section tablefield-wrapper  table, .node-report .tablefield-wrapper  table {
+   border-color: white;
+}
+
+.node-type-element-section .field-name-field-image, .node-report .field-name-field-image {
+   max-height: 800px;
+   max-width: 600px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.node-type-element-section .node-figure .field-name-title, .node-report .node-figure .field-name-title {
+   text-align: center;
+}
+
+.node-type-element-section .node-figure .field-name-node-link , .node-report .node-figure .field-name-node-link {
+   
+}
+
+
+
+.node-type-element-section .node-figure .field-name-field-field-table-caption , .node-report .node-figure .field-name-field-field-table-caption {
+   font-size: 18px;
+}
+
+
+.node-element-section .field-name-field-nodes-section > .field-items >  .field-item {
+   border-bottom:1px solid #e2e2e2;
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+}
+
+
+.node-report .node-element-section .node-title {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.node-report .node-cover-page .group-header {
+   border-bottom:1px solid #e2e2e2;
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+}
+
+
+
+
+.node-type-element-section .field-name-field-table-source , .node-report .field-name-field-table-source {
+   margin-top:2em;
+}
+
+.node-report table {
+   
+}
+

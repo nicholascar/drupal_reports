@@ -1,0 +1,9 @@
+.page-id-report table,.page-id-report th,.page-id-report td {
+   border: 1px solid black;
+   text-align: center;
+}
+
+.page-id-report .node-cover-page .field-name-body, .page-id-report .node-cover-page .field-name-body, {
+   color: #00a9ce;
+   font-size: 2em;
+} 
