@@ -1,0 +1,4 @@
+name = TableOfContents
+description = "Generates a table of contents for each report node"
+core = 7.x
+files[] = toc.module

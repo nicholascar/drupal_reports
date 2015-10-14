@@ -1,0 +1,37 @@
+<?php
+
+   /**
+      Ths function inserts a table of contents.
+      For a report type this function will loop through each of the sections and
+      give the title of the section a section number. 
+   **/
+   
+   function toc_node_view($node, $view_mode, $langcode) {
+      if($node->type == 'report') {
+	      if($view_mode == 'full') {
+            $node->field_nodes['und'][0]['node']->content['my_new_field'] = array(
+               '#markup' => "<br><h1 class='tocHeading'>Table Of Contents</h1>",
+               '#weight' => 4
+            );
+            $node->field_nodes['und'][0]['node']->title = '';
+         
+            for($x = 1; $x < count($node->field_nodes['und']); $x++) {
+               $node->field_nodes['und'][0]['node']->
+                  content['my_new_field']['#markup'] .= "<a href='#sectionID".$x."'><h3>"."Section "
+                  .$x.".0 ".$node->field_nodes['und'][$x]['node']->title."</h3></a>";
+            
+               $node->field_nodes['und'][$x]['node']->title = "Section ".$x.".0 ".
+                  $node->field_nodes['und'][$x]['node']->title;
+
+               $node->field_nodes['und'][$x]['node']->content['sectionID_'.$x] = array(
+                  '#markup' => "<a id = 'sectionID".$x."'></a>",
+                  '#weight' => -1
+               );
+
+            }
+         }
+      }
+   }
+
+
+
