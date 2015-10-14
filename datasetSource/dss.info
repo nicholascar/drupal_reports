@@ -1,0 +1,4 @@
+name = DatasetSource
+description = "For each source field in report elements this module will populate the selection field with data from an external site."
+core = 7.x
+files[] = dss.module

@@ -1,0 +1,45 @@
+<?php
+   /**
+      Populates the selection field for report elements that contains a source with sources from 
+      the sample dataset given. Loads the dataset website and grabs the name of each source and its
+      GUID. The GUID is sent to the metadataexporter for citations and the result is displayed as a key
+      for the selection field.
+   **/
+   function dss_form_alter(&$form, &$form_state, $form_id) {
+      if($form_id == "figure_node_form") {
+         $file = "http://drup-dev-vc.it.csiro.au/id/dataset/";
+         $doc = new DOMDocument();
+         $doc->loadHTMLFile($file);
+
+         $tags = $doc->getElementsByTagname('a');
+         $testArray = array();
+         
+         foreach ($tags as $tag) {
+            $sub = substr(($tag->getAttribute('href')),42);
+            
+            $string1 = str_replace(' ', '', dataset_citations($sub));
+            $string2 = str_replace("\n", "", $string1);
+            $string3 = str_replace("\r", "", $string2);
+
+            $testArray[$string3] = $tag->nodeValue;
+         }
+         $form['field_source']['und']['#options'] = $testArray;
+      }
+   }
+
+   //goes to "http://data.bioregionalassessments.gov.au/function/metadataexporter/citations" and
+   //returns the results from post.
+   function dataset_citations($GUID) {
+      $url = 'https://data.bioregionalassessments.gov.au/function/metadataexporter/citations';
+      $data = array(
+         'citations' => $GUID
+      );
+      $options = array(
+                'method' => 'POST',
+                'data' => drupal_http_build_query($data, '', '&'),
+                'headers' => array('Content-Type' => 'application/x-www-form-urlencoded',),
+      );
+      $response = drupal_http_request($url, $options);//
+      return $response->data; 
+   }
+
