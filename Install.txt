@@ -2,6 +2,7 @@ The following is a step by step guide on how to install the drupal report genera
 The easiest way to do this is with drush so the instructions will be written assuming drush is used.
 First the instruction will be written then the drush command
 
+0. Install and setup drupal.
 1. Install the features module (drush en features -y)
 2. copy over 'tableofcontents' , 'datasetSource' to site/all/modules
 3. install and enable zen. (drush en zen -y)
