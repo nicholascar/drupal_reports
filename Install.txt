@@ -1,0 +1,51 @@
+The following is a step by step guide on how to install the drupal report generation website.
+The easiest way to do this is with drush so the instructions will be written assuming drush is used.
+First the instruction will be written then the drush command
+
+1. Install the features module (drush en features -y)
+2. copy over 'tableofcontents' , 'datasetSource' to site/all/modules
+3. install and enable zen. (drush en zen -y)
+4. copy over csiro_internal_theme to site/all/themes
+5. Install the references module (drush en references -y)
+6. install the display suite module (drush en ds -y)
+7. copy over the 'report_generation' folder to site/all_modules.
+8. Install the report generation feature (drush en report_generation -y)
+9. The site is now completly installed with two exceptions: 
+   - The report nodes examples need to be assigned report elements in list of reports or 
+     remove them completly. 
+   -  The display suite settings didn't transfer over. This module configures how a node is
+      displayed with what content goes where. For example the source of the table will be below the
+      table instead of above it. To resolve this issue go to admin/structure/ds and adjust each
+      node's display indvidually. The layout for each report element is as follows: 
+
+- before you can do this you need to change the layout once you're in the node's display settings. 
+Change -None- to Fluid two column stacked. Then put all the content in the header and remove the 
+undesired ones. 
+
+-          table
+
+   o   caption (above the table)
+   o   table data
+   o   Source
+   o   Put a 'Read more' field below the table that will link to the node.
+
+
+-          figure
+
+   o   Image
+   o   caption
+   o   Put a 'Read more' field below the figure that will link to the node.
+
+-          paragraph
+
+   o   title – above the paragraph text
+   o   Put a 'Read more' field below the title that will link to the node.
+
+-          Cover Page
+
+   o   Header
+   o   Date
+   o   Sub Heading
+   o   Party Involved
+
+Note: If the css needs changing adjust it in the CSIRO theme under report.css

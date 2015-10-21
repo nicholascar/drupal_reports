@@ -10,7 +10,6 @@ sites/*/private
 robots.txt
 /CHANGELOG.txt
 /COPYRIGHT.txt
-/INSTALL*.txt
 /LICENSE.txt
 /MAINTAINERS.txt
 /UPGRADE.txt
